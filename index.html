@@ -120,21 +120,24 @@
           <h2 class="section-title">Contact</h2>
         </div>
 
-          <form action="" class="contact__form">
+          <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+            <input type="hidden" name="access_key" value="13b7ab80-3317-4e78-a2f7-b3ed6b51cc43">
             <input
               type="text"
               placeholder="Name"
+              name='name'
               class="contact__input"
               id="contact-name"
             />
             <input
-              type="mail"
+              type="email"
+              name="email"
               placeholder="Email"
               class="contact__input"
               id="contact-email"
             />
             <textarea
-              name=""
+              name="message"
               id="contact-message"
               cols="0"
               rows="10"
@@ -142,7 +145,7 @@
               class="contact__input"
             ></textarea>
             <input
-              type="button"
+            type="submit"
               value="Send"
               class="contact__button button"
               id="contact-button"
